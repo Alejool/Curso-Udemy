@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--cargar el style y el mormalize-->
+	
+		<link rel="stylesheet" href="css/style.css" >
+        <link rel="stylesheet" href="../css/normalize.css">
+     <!--agregar imagen en la parte del titulo de página-->
+		<link rel="icon" href="img/blog3.jpg">
+
+
+    <!--fuentes-->
+    <!--princiapl-->
+    <link rel="preconnect"href="https://fonts.googleapiscom">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Poor+Story&display=swap" rel="stylesheet"> 
+  <!--joda-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Island+Moments&display=swap" rel="stylesheet">
+  <!--secundaria-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&display=swap" rel="stylesheet">
+  <!--textos-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+ 
+<!--fuente p-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap" rel="stylesheet">
+    <title>Café</title>
+
+
+</head>
+  <body>
+
+    <header class="header">
+      <div class="contenedor">
+
+        <div class="barra">
+          <a class="logo no-margin" href="index.html"> 
+          <h1 class="logo__nombre no-margin centrar-texto"> Blog<span class="logo__bold">DeCafé</span></h1>
+          </a>
+            
+          <nav class="navegacion">
+            <a href="nosotros.html" class="navegacion__enlace"> Nosotros</a>
+            <a href="cursos.html" class="navegacion__enlace"> cursos</a>
+            <a href="contacto.html" class="navegacion__enlace">Contacto</a>
+          </nav>
+            
+          </div>
+            
+         <div class="header_texto">
+            <h2 id="heading" class="no-margin">  Blog de Café</h2>
+              <p class="no-margin">Aprende de los expertos con las mejores recetas y consejos</p> 
+        </div>
+      </div>
+    </header>
+
+  <main class="contenedorForm"> 
+    <div class="contacto">
+        <h3 class="centrar-texto">
+            Contacto </h3>
+        <div class="contacto-imagen"> </div>
+
+     <form class="contacto-form">
+            <div class="campo">
+                <label for="nombre"
+                class="campo__label">Nombre</label>
+                <input 
+                class="campo__field"
+                type="text"
+                placeholder="Tu Nombre" 
+                id="nombre">
+            </div>
+
+            <div class="campo">
+                <label for="email" 
+                class="campo__label">E-mail</label>
+                <input 
+                class="campo__field"
+                type="email"
+                placeholder="Tu E-mail"
+                class="campo__input" 
+                id="email">
+            </div>
+            <div class="campo">
+                <label for="mensaje"
+                class="campo__label">Mensaje</label>
+                <textarea
+                class="campo__field campo__field--textarea"
+                id="mensaje"> </textarea>
+            </div>
+
+        <div class="campo boton__contacto">
+            <input 
+            type="submit" 
+            value="Enviar " 
+            class="boton boton--primario envio ">
+        </div>
+         
+
+           
+    
+        </form>
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <div class="contenedor">
+      <div class="barra">
+        <a class="logo no-margin" href="index.html"> 
+          <h1 class="logo__nombre no-margin centrar-texto"> Blog<span class="logo__bold">DeCafé</span></h1>
+        </a>
+      
+      <nav class="navegacion">
+        <a href="nosotros.html"class="navegacion__enlace"> Nosotros</a>
+        <a href="cursos.html" class="navegacion__enlace"> cursos</a>
+        <a href="contacto.html" class="navegacion__enlace">Contacto</a>
+      </nav>
+    </div>
+   </div>
+  </footer>
+
+  <script src="js/refactoring.js"></script>
+  </body>
+</html>
