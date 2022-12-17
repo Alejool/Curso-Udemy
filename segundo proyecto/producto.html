@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tienda de Fronted</title>
+
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/style.css">
+
+  <!--fuentes-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Hindi:ital@1&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+
+  <header class="header">
+    <a href="index.html">
+      <img class="header__logo" src="../img/logo.png" alt="logotipo">
+    </a>
+  </header>
+
+  <nav class="navegacion">
+    <a class="navegacion__enlace navegacion__enlace--activo"   href="index.html">tienda</a>
+    <a class="navegacion__enlace"  href="nosotros.html"> nosotros</a>
+  </nav>
+
+  <main class="main contenedor">
+    <h1> React JS</h1>
+      <div class="camisa">
+        <img class="camisa__imagen" src="img/3.jpg" alt="camisa de react js">
+
+        <div class="camisa__información">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi voluptatem voluptatum quo necessitatibus, quasi id est eveniet facere, accusantium ea sed maiores et dolores nihil, qui dolore in consequuntur. Tempora? Lorem, ipsum dolor sit amet consectetur</p>
+          <form class="camisa__formulario">
+              <select class="camisa__formulario--campo">
+                <option disabled selected>-- Seleccionar Talla --</option> <!--indica disabled= no se puede seleccionar  selected=seleccionado por default-->
+                <option>Pequeña</option>
+                <option>Mediana</option>
+                <option>Grande</option>
+              </select>
+              <input class="camisa__formulario--campo" type="number" placeholder="Cantidad" min="1" >
+              <input class="camisa__formulario--submit" type="submit" value="AGREGAR AL CARRITO">
+          </form>
+        
+        </div>
+        
+
+      </div>
+
+
+  </main>
+
+
+  <footer class="footer">
+    <p class="footer__texto">fronted end Store -Todos los derechos reservados 2022 </p>
+  </footer>
+    
+</body>
+</html>
