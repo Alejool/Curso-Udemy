@@ -1,0 +1,321 @@
+
+/*definir colores, 0tamaño de letras, tipo de letras, etc. tambien son llamdas  root y se llamana mediante variables*/
+ 
+:root   {
+  --blanco:#fff;
+  --negro:#000;
+  --amarillo:#ffbf00;
+  --azul:#18b7c9;
+  --gris:#8b8a8a;
+  --tamaño-titulo:4rem;
+  --fuente-general: 'Merriweather', serif;
+  --fuente-titulos: 'DynaPuff', cursive;
+  --gris-fondo:#ebebeb;
+  
+}
+/* GLOBALES */
+html{
+  font-size: 62.5%;
+  
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+
+
+body {
+    font-size: 16px;
+    font-family: var(--fuente-general);
+    background-image: linear-gradient(to top, var(--gris-fondo) 0%, var(--blanco) 100%);
+    scroll-snap-type: y mandatory;
+  }
+
+h1 {
+  font-size: 3.8rem;
+}
+h2 {
+  font-size: 2.8rem;
+
+}
+
+h3{
+ font-size: 2.0rem;
+}
+
+p,h1,h2,h3 {
+  text-align: center;
+}
+.servicios, .navegación-principal, .formulario{
+  scroll-snap-align: center;
+  scroll-snap-stop: always;
+
+}
+
+.sombra {
+  box-shadow: -7px 10px 18px 1px rgba(107,103,107,0.58);
+  background-color: var(--blanco);
+  padding: 2rem;
+  border-radius: 7.5px;
+  
+}
+
+/* TITULO */
+.titulo {
+  text-align: center; 
+  font-size: var(--tamaño-titulo);
+  font-family: var(--fuente-titulos);
+}
+
+.titulo span {
+    font-size: 2.4rem;
+}
+
+
+/*ENLACES*/
+.color-fondo  {
+  background-color: var(--azul);
+  margin: .4rem;
+  border-radius: .3rem;
+
+}
+.contenedor {
+  margin:  auto ;
+  /*modo extenso
+  margin-top: 2px;
+  margin-right: auto;
+  margin-bottom: 2px;
+  margin-left: auto;  */
+  max-width: 120rem;
+}
+
+.boton {
+  background-color: var(--azul);
+  color: var(--blanco);
+  padding: 1.1rem ;
+  margin-top: 1rem;
+  font-size: 1.7rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius:4px;
+  width: 80%;
+  text-align: center;
+  border:none;
+  cursor: pointer;
+}
+
+@media (min-width: 768px ){
+  .boton{width: auto;
+  }
+}
+
+
+
+.navegación-principal {
+  display: flex;
+  flex-direction: column;
+
+
+}
+@media (min-width: 768px){
+  .navegación-principal {
+  flex-direction: row; 
+  justify-content:space-between;
+  }
+}
+
+
+
+.navegación-principal a { 
+  display:block;
+  text-align: center;
+  color: var(--blanco);   
+  text-decoration: none; 
+  font-size: 2rem;
+  font-weight: 700;
+  padding: 1.2rem;
+
+  
+}
+
+.navegación-principal a:hover{
+  background-color: var(--amarillo);
+  color:var(--negro); 
+  border-radius: .4rem;  
+}
+
+@media (min-width: 480px){
+  body{background-color: var(--fondo);}
+}
+
+/*SECCION DEBAJO DE LOS ENLACES*/
+.hero{
+  background-image: url(../imagenes/hero4.jpg);
+ 
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+  margin: 2px ;
+  margin-bottom:2rem;
+  position:relative;
+  border-radius: 1rem;
+}
+
+
+
+
+
+.contenido-hero{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .6); /**podemos  usar estas 2**/
+  background-color: rgb(0 0 0 / 60%); /**para ponerle intensidad**/
+
+  /*este display flex lo usamos cuando queremos alineacion en vertical y horizontal*/
+  display: flex;
+  flex-direction: column;
+  align-items: center; /**alineacion horizantal si y solo si tiene flex-direction: column**/
+  justify-content: center; /*alineacion vertical**/
+  border-radius: 1rem;
+  
+}
+.contenido-hero h2, .contenido-hero p {
+  color: var(--blanco);
+}
+
+
+
+@media (min-width: 768px){
+/*.servicios*/
+.servicios {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; /*TAMBIEN 1fr 1fr 1fr*/            /*repeat(3, 1fr) indica que repita 3 veces 1fr*/
+  /*version corta */
+ /*grid:rows / column;*/
+ column-gap:1.5rem ; /*parecido a un margen*/
+  } 
+}
+
+.servicio {
+  display:flex;
+  flex-direction: column ;
+  align-items: center;
+}
+
+.servicio h3{
+  color: var(--azul);
+ 
+}
+
+.servicio p {
+  line-height: 3.3rem;
+  text-align: center;
+}
+
+.servicio .iconos {
+  height: 10rem;
+  width: 10rem;
+  background-color: var(--amarillo);
+  border-radius: 50%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*contacto*/
+/*formulario*/
+.formulario {
+   background-color: var(--gris);
+   width: min(55rem, 100%);  /*utilza el valor mas pequeño*/
+   margin:auto ;
+   padding: 2rem;
+   border-radius: 1rem;
+}
+.formulario fieldset {
+  border:none;
+}
+
+.formulario legend {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 570;
+  font-size: 1.8rem;
+  margin-bottom: 1.2rem;
+  color: var(--amarillo);
+}
+@media (min-width:768px ){
+ .contenedor-campos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto 20rem;
+  column-gap: 1rem;
+}
+
+.campo:nth-child(3), .campo:nth-child(4) {
+  grid-column: 1 / 3;
+}   /*lo que hace es seleccionar una posicion entre todos*/
+
+
+.campo {
+ margin-bottom: .8rem;
+ ;
+}
+}
+
+.campo label {
+  color: var(--negro);
+  font-weight: bold;
+  display: block;
+  margin-bottom:3px;
+  font-size:18px;
+
+}
+.campo input {
+  width: 100%;
+  padding:1.2rem;
+  border:none;
+  border-radius: .4rem;
+  margin-bottom:5px;
+}
+.campo textarea {
+  width: 100%;
+  padding:6.3rem;
+  border:none;
+  border-radius: .9rem;
+  
+}
+
+
+/*boton enviar*/
+.enviar {
+  width: 100%;
+ }
+
+ .footer {
+  text-align: center;
+  font-weight: bold;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
